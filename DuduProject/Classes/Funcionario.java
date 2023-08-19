@@ -10,10 +10,13 @@ public class Funcionario {
   }
 
 
+  public Funcionario() {}
+
   public void alterarSenha(String senha) {
-    if(senha.length() < 3){
+    if (senha.length() < 3) {
       System.out.println("Valor Invalido");
-    }else{
+    }
+    else {
       this.senha = senha;
     }
   }
@@ -34,9 +37,10 @@ public class Funcionario {
   public String getSenha() { return senha; }
 
   public void setSenha(String senha) {
-    if(senha.length() < 3){
+    if (senha.length() < 3) {
       System.out.println("Valor Invalido");
-    }else{
+    }
+    else {
       this.senha = senha;
     }
   }

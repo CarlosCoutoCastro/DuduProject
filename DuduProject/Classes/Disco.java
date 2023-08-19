@@ -1,14 +1,10 @@
 package Classes;
 //import java.util;
 
-public class Disco {
+public class Disco extends Object {
     private String titulo;
     private String nomeBanda; // multivalorado
     private String estilo; // multivalorado
-    private int codigoObjeto; // Autoincrement do banco de dados
-    private float valorAluguel; 
-    private int quantidadeExemplares = 0;
-    private static int numeroCodigos = 0; //Valor futuramente extraido do banco para autoincrement
 
     public Disco(String titulo, String nomeBanda, String estilo, float valorAluguel){
         setCodigoObjeto();// AutoIncrement do banco para codigoObjeto
@@ -21,52 +17,46 @@ public class Disco {
 
 
     public void exemplarAlugado(){
-        quantidadeExemplares --;
-    }
+        if (getQuantidadeExemplares() <= 0) {
+          System.out.println("Não há exemplares disponíveis");
+        } 
+        else {
+          adicionarExemplar(-1);
+        }
+      }
     public void exemplarAlugado(int quantidade){
-        this.quantidadeExemplares = this.quantidadeExemplares - quantidade;
+        adicionarExemplar(getQuantidadeExemplares() - quantidade);
     }
 
-
-    public void adicionarExemplar(){
-        quantidadeExemplares ++;
-    }
-    public void adicionarExemplar(int quantidade){
-        this.quantidadeExemplares = this.quantidadeExemplares + quantidade;
-    }
 
 
     public void adicionarNomeBanda(String nomeBanda){
-        if(nomeBanda.length() < 1){
+        if (nomeBanda.length() < 1) {
             System.out.println("Valor Nulo, Coloque um nome da banda válido");
-        }else{
+        }
+        else {
             this.nomeBanda = this.nomeBanda + " " +  nomeBanda; // concatena duas bandas em uma string
         }
     }
 
 
     public void adicionarEstilo(String estilo){
-        if(estilo.length() < 1){
+        if (estilo.length() < 1) {
             System.out.println("Valor Nulo, Coloque um estilo válido");
-        }else{
+        }
+        else {
             this.estilo = this.estilo + " " +  estilo; // concatena dois estilos em uma string
         }
     }
     
 
-    public int getCodigoObjeto() { return codigoObjeto; }
-
-    public void setCodigoObjeto(){
-       this.codigoObjeto = Disco.numeroCodigos ++;
-    }
-
-
     public String getTitulo() { return titulo; }
 
     public void setTitulo(String titulo){
-        if(titulo.length() < 1){
+        if (titulo.length() < 1) {
             System.out.println("Valor Nulo, Coloque um titulo válido");
-        }else{
+        }
+        else {
             this.titulo = titulo;
         }
     }
@@ -75,9 +65,10 @@ public class Disco {
     public String getNomeBanda() { return this.nomeBanda; }
 
     public void setNomeBanda(String nomeBanda){
-        if(nomeBanda.length() < 1){
+        if (nomeBanda.length() < 1) {
             System.out.println("Valor Nulo, Coloque um nome para a Banda válido");
-        }else{
+        }
+        else {
             this.nomeBanda = nomeBanda;
         }
     }
@@ -89,21 +80,5 @@ public class Disco {
             this.estilo = estilo; // pode não haver estilo.
             //Criar classe para estilo no futuro ...
     }
-
-
-    public int getQuantidadeExemplares() { return quantidadeExemplares; }
-
-    public void setQuantidadeExemplares(int quantidadeExemplares){
-        this.quantidadeExemplares = quantidadeExemplares; // Podem haver 0 exemplares
-    }
-
-
-    public float getValorAluguel() { return valorAluguel; }
-
-    public void setValorAluguel(float valorAluguel){
-        this.valorAluguel = valorAluguel;
-    }
-    //título, nome da banda, estilo
-    //<ex:Rock, MPB…>, quantidade de exemplares, valor do aluguel)
 
 }

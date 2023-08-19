@@ -31,12 +31,12 @@ public class Object {
     }
 
 
+    public int getQuantidadeExemplares() { return quantidadeExemplares; }
+
     public void adicionarExemplar(){
         this.quantidadeExemplares++;
     }
-    public int getQuantidadeExemplares() { return quantidadeExemplares; }
-
-    public void setQuantidadeExemplares(int quantidadeExemplares){
+    public void adicionarExemplar(int quantidadeExemplares){
         this.quantidadeExemplares = quantidadeExemplares; // Podem haver 0 exemplares
     }
 
