@@ -1,7 +1,9 @@
-public class Gerente{
+package Classes;
+
+public class Gerente {
   private String login;
   private String senha;
-  private bool isGerente;
+  private Boolean isGerente;
 
   public Gerente(String login, String senha){
     setLogin(login);
@@ -9,20 +11,26 @@ public class Gerente{
     setIsGerente();
   }
 
-  public String alterarSenha(String senha) {
-    if(senha.length() < 3){
+
+  public void alterarSenha(String senha) {
+    if (senha.length() < 3) {
       System.out.println("Valor Invalido");
-    }else{
+    }
+    else {
       this.senha = senha;
     }
   }
 
-  public setIsGerente(){
-    isGerente = true;
+
+  public Boolean getIsGerente() { return isGerente; }
+  
+  public void setIsGerente(){
+    this.isGerente = true;
   }
-  public String getLogin() {
-    return login;
-  }
+
+
+  public String getLogin() { return login; }
+
   public void setLogin(String login) {
     if(login.length() < 1){
       System.out.println("Valor Invalido");
@@ -31,9 +39,8 @@ public class Gerente{
     }
   }
 
-  public String getSenha() {
-    return senha;
-  }
+
+  public String getSenha() { return senha; }
 
   public void setSenha(String senha) {
     if(senha.length() < 3){
@@ -43,5 +50,4 @@ public class Gerente{
     }
   }
 
-  
 }
