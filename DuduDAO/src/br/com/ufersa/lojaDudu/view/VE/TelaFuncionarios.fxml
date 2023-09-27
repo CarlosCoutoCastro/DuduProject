@@ -30,7 +30,7 @@
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" disable="true" layoutY="102.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Clientes Registrados">
+            <Button alignment="BASELINE_LEFT" layoutY="102.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Clientes Registrados">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
@@ -40,7 +40,7 @@
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutY="146.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Funcionários">
+            <Button alignment="BASELINE_LEFT" disable="true" layoutY="146.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Funcionários">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
@@ -60,12 +60,12 @@
                   <Image url="@Logo_BW.png" />
                </image>
             </ImageView>
-            <Label layoutX="91.0" layoutY="2.0" text="Registro">
+            <Label layoutX="91.0" layoutY="2.0" text="Gerenciar">
                <font>
                   <Font name="Work Sans SemiBold" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="91.0" layoutY="27.0" text="Clientes Registrados" textFill="#ffa724">
+            <Label layoutX="91.0" layoutY="27.0" text="Funcionários" textFill="#a45cff">
                <font>
                   <Font name="Work Sans SemiBold" size="17.0" />
                </font>
