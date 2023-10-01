@@ -61,12 +61,12 @@
          </children>
       </Group>
       <Line endX="100.0" layoutX="320.0" layoutY="180.0" startX="-100.0" strokeWidth="0.2" />
-      <Hyperlink layoutX="252.0" layoutY="293.0" text="Esqueceu sua senha?">
+      <Hyperlink fx:id="recuperar" layoutX="252.0" layoutY="293.0" onAction="#recuperarConta" text="Esqueceu sua senha?">
          <font>
             <Font size="6.0" />
          </font>
       </Hyperlink>
-      <Button alignment="CENTER" layoutX="320.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Entrar" textAlignment="CENTER">
+      <Button alignment="CENTER" layoutX="320.0" layoutY="307.0" mnemonicParsing="false" onAction="#autenticar" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 5; -fx-background-color: #363B3E;" text="Entrar" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Work Sans Medium" size="12.0" />
          </font></Button>

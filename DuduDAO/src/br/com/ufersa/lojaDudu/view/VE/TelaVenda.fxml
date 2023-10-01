@@ -11,41 +11,41 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="640.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ufersa.lojaDudu.controller.VendaController">
    <children>
       <Group layoutX="14.0" layoutY="14.0">
          <children>
-            <Button alignment="BASELINE_LEFT" disable="true" layoutY="36.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Venda">
+            <Button alignment="BASELINE_LEFT" layoutY="36.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" style="-fx-background-radius: 5; -fx-background-color: #363B3E;" text="Venda" textFill="WHITE">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutY="58.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Estoque de Livros">
+            <Button alignment="BASELINE_LEFT" layoutY="58.0" mnemonicParsing="false" onAction="#mudarTelaEstqLivros" prefHeight="22.0" prefWidth="104.0" style="-fx-background-radius: 5; -fx-background-color: #f6f6f6;" text="Estoque de Livros">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutY="80.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Estoque de Discos">
+            <Button alignment="BASELINE_LEFT" layoutY="80.0" mnemonicParsing="false" onAction="#mudarTelaEstqDiscos" prefHeight="22.0" prefWidth="104.0" style="-fx-background-radius: 5; -fx-background-color: #f6f6f6;" text="Estoque de Discos">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutY="102.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Clientes Registrados">
+            <Button alignment="BASELINE_LEFT" layoutY="102.0" mnemonicParsing="false" onAction="#mudarTelaClientes" prefHeight="22.0" prefWidth="104.0" style="-fx-background-radius: 5; -fx-background-color: #f6f6f6;" text="Clientes Registrados">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutY="124.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Relatorios">
+            <Button alignment="BASELINE_LEFT" layoutY="124.0" mnemonicParsing="false" onAction="#mudarTelaRelatorio" prefHeight="22.0" prefWidth="104.0" style="-fx-background-radius: 5; -fx-background-color: #f6f6f6;" text="Relatorios">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" layoutY="146.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Funcionários">
+            <Button alignment="BASELINE_LEFT" layoutY="146.0" mnemonicParsing="false" onAction="#mudarTelaFuncionarios" prefHeight="22.0" prefWidth="104.0" style="-fx-background-radius: 5; -fx-background-color: #f6f6f6;" text="Funcionários">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="22.0" prefWidth="62.0" text="Sair">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#mudarTelaLogin" prefHeight="22.0" prefWidth="62.0" style="-fx-border-radius: 5; -fx-border-color: #363B3E; -fx-background-radius: 5; -fx-background-color: #f6f6f6;" text="Sair">
                <font>
                   <Font name="Work Sans SemiBold" size="8.0" />
                </font>
@@ -53,7 +53,7 @@
          </children>
       </Group>
       <Line endX="-100.0" endY="255.0" layoutX="236.0" layoutY="105.0" startX="-100.0" startY="-105.0" strokeWidth="0.3" />
-      <Group layoutX="163.0" layoutY="13.0">
+      <Group layoutX="161.0" layoutY="14.0">
          <children>
             <ImageView fitHeight="49.0" fitWidth="76.0">
                <image>
@@ -74,7 +74,7 @@
       </Group>
       <ListView layoutX="159.0" layoutY="158.0" prefHeight="161.0" prefWidth="457.0" />
       <ListView layoutX="159.0" layoutY="104.0" prefHeight="21.0" prefWidth="457.0" />
-      <TextField layoutX="219.0" layoutY="78.0" prefHeight="18.0" prefWidth="300.0" promptText="Procure por nome ou cpf">
+      <TextField fx:id="srchCliente" layoutX="219.0" layoutY="78.0" onAction="#procurarCliente" prefHeight="18.0" prefWidth="300.0" promptText="Procure por nome ou cpf">
          <font>
             <Font size="8.0" />
          </font>
@@ -84,7 +84,7 @@
             <Font name="Work Sans SemiBold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="528.0" layoutY="79.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="88.0" text="Registrar Novo Cliente">
+      <Button fx:id="addCliente" layoutX="528.0" layoutY="79.0" mnemonicParsing="false" onAction="#adicionarCliente" prefHeight="17.0" prefWidth="88.0" style="-fx-background-radius: 5; -fx-background-color: #363B3E;" text="Registrar Novo Cliente" textFill="WHITE">
          <font>
             <Font name="Work Sans Medium" size="7.0" />
          </font>
@@ -94,12 +94,12 @@
             <Font name="Work Sans SemiBold" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="519.0" layoutY="132.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="95.0" text="Registrar Novo Produto">
+      <Button fx:id="addCarrinho" layoutX="519.0" layoutY="132.0" mnemonicParsing="false" onAction="#adicionarCarrinho" prefHeight="17.0" prefWidth="95.0" style="-fx-background-radius: 5; -fx-background-color: #363B3E;" text="Adicionar ao Carrinho" textFill="WHITE">
          <font>
             <Font name="Work Sans Medium" size="7.0" />
          </font>
       </Button>
-      <Button layoutX="507.0" layoutY="324.0" mnemonicParsing="false" text="Finalizar Venda">
+      <Button fx:id="finalVenda" layoutX="507.0" layoutY="324.0" mnemonicParsing="false" onAction="#finalizarVenda" style="-fx-background-radius: 5; -fx-background-color: #5EB357;" text="Finalizar Venda" textFill="WHITE">
          <font>
             <Font name="Work Sans SemiBold" size="12.0" />
          </font>
