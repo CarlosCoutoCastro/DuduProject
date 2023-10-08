@@ -1,18 +1,22 @@
 package br.com.ufersa.lojaDudu.model.entity;
 //import java.util;
 
-public class Disco  {
+public class Disco extends Item {
 
-    private Long id;
-    private String titulo;
-    private String nomeBanda; // multivalorado
+    // private Long id;
+
+    // private String titulo;
+    // private String nomeBanda; // multivalorado
     private String estilo; // multivalorado
 
-    public Disco(String titulo, String nomeBanda, String estilo, float valorAluguel){
+    public Disco(String titulo, String nomeBanda, String estilo, Integer quantEstq, Double valorAluguel){
         //setCodigoObjeto();// AutoIncrement do banco para codigoObjeto
+        setId(novoId++);
         setTitulo(titulo);
-        setNomeBanda(nomeBanda);
+        setAutor(nomeBanda);
+        setTipo("Disco");
         setEstilo(estilo);
+        setQuantEstq(quantEstq);
         setValorAluguel(valorAluguel);
         //adicionarExemplar();
     }
@@ -32,12 +36,19 @@ public class Disco  {
 
 */
 
-    public void adicionarNomeBanda(String nomeBanda){
+    // public Long getId() {
+    //     return id;
+    // }
+    // public void setId(Long id) {
+    //     this.id = id;
+    // }
+
+    public void adicionarOutraBanda(String nomeBanda){
         if (nomeBanda.length() < 1) {
             System.out.println("Valor Nulo, Coloque um nome da banda válido");
         }
         else {
-            this.nomeBanda = this.nomeBanda + " " +  nomeBanda; // concatena duas bandas em uma string
+            setAutor(getAutor() + " e " +  nomeBanda); // concatena duas bandas em uma string
         }
     }
 
@@ -47,33 +58,33 @@ public class Disco  {
             System.out.println("Valor Nulo, Coloque um estilo válido");
         }
         else {
-            this.estilo = this.estilo + " " +  estilo; // concatena dois estilos em uma string
+            setEstilo(this.estilo + " e " + estilo); // concatena dois estilos em uma string
         }
     }
     
 
-    public String getTitulo() { return titulo; }
+    // public String getTitulo() { return titulo; }
 
-    public void setTitulo(String titulo){
-        if (titulo.length() < 1) {
-            System.out.println("Valor Nulo, Coloque um titulo válido");
-        }
-        else {
-            this.titulo = titulo;
-        }
-    }
+    // public void setTitulo(String titulo){
+    //     if (titulo.length() < 1) {
+    //         System.out.println("Valor Nulo, Coloque um titulo válido");
+    //     }
+    //     else {
+    //         this.titulo = titulo;
+    //     }
+    // }
 
 
-    public String getNomeBanda() { return this.nomeBanda; }
+    // public String getNomeBanda() { return this.nomeBanda; }
 
-    public void setNomeBanda(String nomeBanda){
-        if (nomeBanda.length() < 1) {
-            System.out.println("Valor Nulo, Coloque um nome para a Banda válido");
-        }
-        else {
-            this.nomeBanda = nomeBanda;
-        }
-    }
+    // public void setNomeBanda(String nomeBanda){
+    //     if (nomeBanda.length() < 1) {
+    //         System.out.println("Valor Nulo, Coloque um nome para a Banda válido");
+    //     }
+    //     else {
+    //         this.nomeBanda = nomeBanda;
+    //     }
+    // }
 
 
     public String getEstilo() { return estilo; }

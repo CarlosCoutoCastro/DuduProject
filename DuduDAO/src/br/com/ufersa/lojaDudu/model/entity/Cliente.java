@@ -1,22 +1,29 @@
 package br.com.ufersa.lojaDudu.model.entity;
 
 public class Cliente {
-    private Long id;
+    // private Long id;
     private String nome;
     private String endereco;
     private String cpf; // primary key
+    private String telefone;
 
 
-    public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-    public Cliente(String nome, String endereco, String cpf){
+    public String getTelefone() { return telefone; }
+    
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+    // public Long getId() {
+	// 	return id;
+	// }
+	// public void setId(Long id) {
+	// 	this.id = id;
+	// }
+    public Cliente(String nome, String endereco, String cpf, String telefone) {
       setNome(nome);
       setEndereco(endereco);
       setCpf(cpf);
+      setTelefone(telefone);
     }   
     public String getNome() { return nome; }
     public void setNome(String nome){
