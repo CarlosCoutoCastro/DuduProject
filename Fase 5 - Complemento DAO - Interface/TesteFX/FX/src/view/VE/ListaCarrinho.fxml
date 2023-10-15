@@ -9,16 +9,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="454.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaDiscoController">
+<HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="454.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaCarrinhoController">
    <children>
-      <Label fx:id="id" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="13.0" text="Id" textAlignment="CENTER">
-         <font>
-            <Font size="8.0" />
-         </font>
-         <HBox.margin>
-            <Insets left="7.0" />
-         </HBox.margin>
-      </Label>
       <Label fx:id="titulo" minHeight="-Infinity" prefHeight="20.0" prefWidth="469.0" text="Titulo" textAlignment="CENTER">
          <font>
             <Font size="8.0" />
@@ -27,7 +19,7 @@
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <Label fx:id="tipo" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="94.0" text="Tipo" textAlignment="CENTER">
+      <Label fx:id="quant_uni" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="94.0" text="Quant" textAlignment="CENTER">
          <font>
             <Font size="8.0" />
          </font>

@@ -5,17 +5,17 @@ public class Venda {
     private int quantidadeExemplares;
     private double valorAluguel;
 
+
     public Venda(String titulo, int quantidadeExemplares, double valorAluguel) {
         setTitulo(titulo);
         setQuantidadeExemplares(quantidadeExemplares);
         setValorAluguel(valorAluguel);
     }
 
-     public Venda() {}
+    public Venda() {}
 
-    public String getTitulo() {
-        return titulo;
-    }
+
+    public String getTitulo() { return titulo; }
 
     public void setTitulo(String titulo) {
         if (titulo != null && !titulo.trim().isEmpty()) {
@@ -25,9 +25,8 @@ public class Venda {
         }
     }
 
-    public int getQuantidadeExemplares() {
-        return quantidadeExemplares;
-    }
+
+    public int getQuantidadeExemplares() { return quantidadeExemplares; }
 
     public void setQuantidadeExemplares(int quantidadeExemplares) {
         if (quantidadeExemplares > 0) {
@@ -37,9 +36,8 @@ public class Venda {
         }
     }
 
-    public double getValorAluguel() {
-        return valorAluguel;
-    }
+
+    public double getValorAluguel() { return valorAluguel; }
 
     public void setValorAluguel(double valorAluguel) {
         if (valorAluguel > 0) {
@@ -49,6 +47,7 @@ public class Venda {
         }
     }
 
+    
     @Override
     public String toString() {
         return "Título: " + titulo + ", Quantidade de Exemplares: " + quantidadeExemplares + ", Valor de Aluguel: " + valorAluguel;

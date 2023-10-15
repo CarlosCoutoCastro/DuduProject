@@ -24,27 +24,29 @@ public class LoginController {
 
     public void autenticar(ActionEvent event) throws Exception {
 
-        Funcionario novFuncionario = new Funcionario(usuario.getText(), senha.getText(), "00000");
+        // Funcionario novFuncionario = new Funcionario(usuario.getText(), senha.getText(), "00000");
 
-        FuncionarioDAO conexao = new FuncionarioDAO();
+        // FuncionarioDAO conexao = new FuncionarioDAO();
 
-        try {
-            conexao.getConnection();
-            if (conexao != null) {
-                Funcionario funcionarioEncontrado = conexao.autenticar(novFuncionario);
-                if (funcionarioEncontrado != null) {
-                    Telas.telaVenda(); // Passar funcionario como parametro.
-                } else {
-                    System.out.println("Funcionario não encontrado");// Aplicar pop-up de
-                }
-            } else {
-                System.out.println("Erro na conexao");
-            }
-        } catch (Exception e) {
-            System.out.println("Falha na conexão");
-        }
+        // try {
+        //     conexao.getConnection();
+        //     if (conexao != null) {
+        //         Funcionario funcionarioEncontrado = conexao.autenticar(novFuncionario);
+        //         if (funcionarioEncontrado != null) {
+        //             Telas.telaVenda(); // Passar funcionario como parametro.
+        //         } else {
+        //             System.out.println("Funcionario não encontrado");// Aplicar pop-up de
+        //         }
+        //     } else {
+        //         System.out.println("Erro na conexao");
+        //     }
+        // } catch (Exception e) {
+        //     System.out.println("Falha na conexão");
+        // }
 
         System.out.println("Usuário: " + usuario.getText() + " | Senha: " + senha.getText());
+        
+        Telas.telaVenda();
     }
 
     public void recuperarConta(ActionEvent event) throws Exception {

@@ -57,10 +57,11 @@ public class ClientesController extends NavController {
             List<Cliente> clientes = new ArrayList<>(controleCliente.listar());
 
             for (Cliente cliente : clientes) {
-                FXMLLoader fxmlLoader = new FXMLLoader(
-                        getClass().getResource("../view/VE/ListaCliente.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/ListaCliente.fxml"));
+
                 HBox hBox = fxmlLoader.load();
                 ListaClientesController ldc = fxmlLoader.getController();
+                
                 ldc.setData(cliente);
                 ldc.userPermissions(true);
                 clientesLayout.getChildren().add(hBox);

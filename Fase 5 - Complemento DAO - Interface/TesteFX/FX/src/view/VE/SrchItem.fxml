@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="197.0" prefWidth="470.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="197.0" prefWidth="470.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SrchItemController">
    <children>
       <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="13.0" layoutY="8.0">
          <image>
@@ -39,14 +39,6 @@
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="423.0" style="-fx-background-color: #FBFDFF; -fx-border-color: #efefef;">
                      <children>
-                        <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="13.0" text="Id" textAlignment="CENTER">
-                           <font>
-                              <Font size="6.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets left="7.0" />
-                           </HBox.margin>
-                        </Label>
                         <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="14.0" prefWidth="416.0" text="Nome" textAlignment="CENTER" textFill="#616a6e">
                            <font>
                               <Font size="6.0" />
@@ -55,15 +47,7 @@
                               <Insets left="7.0" />
                            </HBox.margin>
                         </Label>
-                        <Label maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="99.0" text="Autor/Banda" textAlignment="CENTER" textFill="#616a6e">
-                           <font>
-                              <Font size="6.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets left="7.0" />
-                           </HBox.margin>
-                        </Label>
-                        <Label maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="48.0" text="Tipo" textAlignment="CENTER" textFill="#616a6e">
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="14.0" prefWidth="82.0" text="Quant" textAlignment="CENTER" textFill="#616a6e">
                            <font>
                               <Font size="6.0" />
                            </font>
@@ -91,7 +75,7 @@
                   </HBox>
                   <ScrollPane hbarPolicy="NEVER" prefHeight="235.0" prefWidth="456.0" style="-fx-background-color: #f6f6f6;">
                      <content>
-                        <VBox fx:id="discosLayout" prefHeight="91.0" prefWidth="454.0" style="-fx-background-color: #FBFDFF;" />
+                        <VBox fx:id="itemsLayout" prefHeight="91.0" prefWidth="454.0" style="-fx-background-color: #FBFDFF;" />
                      </content>
                   </ScrollPane>
                </children>

@@ -21,11 +21,25 @@ public class ListaClientesController {
     @FXML private Button delete;
     @FXML private Button add;
 
-    private Cliente selectedCliente;
+    private Cliente cliente;
 
     @FXML
     void adicionar(ActionEvent event) {
         System.out.println("<Cliente Adicionado>");
+        
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/SrchCliente.fxml"));
+        
+        try {
+            System.out.println(getCliente().getNome());
+            
+            Parent root = fxmlLoader.load();
+
+            SrchClienteController sc = fxmlLoader.getController();
+            sc.setSelectedCliente(cliente);
+
+        } catch (IOException e) {
+             e.printStackTrace();
+        }
     }
     
 
@@ -47,7 +61,7 @@ public class ListaClientesController {
             
             // preenche a tela aberta con os dados desse funcionario
             AddEditClienteController aef = fxmlLoader.getController();
-            aef.setData(getSelectedCliente());
+            aef.setData(getCliente());
 
             stage.show();
             
@@ -59,7 +73,8 @@ public class ListaClientesController {
 
     public void setData(Cliente cliente) {
 
-        setSelectedCliente(cliente);
+        setCliente(cliente);
+
         nome.setText(cliente.getNome());
         endereco.setText(cliente.getEndereco());
         cpf.setText(cliente.getCpf());
@@ -75,10 +90,10 @@ public class ListaClientesController {
         add.setManaged(!controlVisibility);
     }
     
-    public Cliente getSelectedCliente() { return selectedCliente; }
+    public Cliente getCliente() { return cliente; }
 
-    public void setSelectedCliente(Cliente selectedCliente) {
-        this.selectedCliente = selectedCliente;
+    public void setCliente(Cliente selectedCliente) {
+        this.cliente = selectedCliente;
     }
 
 }

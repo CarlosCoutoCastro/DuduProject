@@ -6,31 +6,39 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class ListaCarrinhoController {
-    @FXML
-    private Label nome;
-    @FXML
-    private Label tipo;
-    @FXML
-    private Label preco;
-    @FXML
-    private Button delete;
+public class ListaCarrinhoController {    
+    
+    @FXML private Label id;
+    @FXML private Label titulo;
+    @FXML private Label quant_uni;
+    @FXML private Label preco_uni;
+    @FXML private Button delete;
 
     private Venda selectedVenda;
+
 
     @FXML
     void deletePU(ActionEvent event) {
         System.out.println("<Abrindo Pop-Up Confirmação>");
     }
 
+    public void setData() { // apenas para teste (REMOVA)
+        titulo.setText("....");
+        quant_uni.setText("....");
+        preco_uni.setText("....");
+    }
     public void setData(Venda venda) {
-        nome.setText("....");
+
+        setSelectedVenda(venda);
+        
+        titulo.setText(venda.getTitulo());
         // +venda.getTitulo()
-        tipo.setText("....");
+        quant_uni.setText("" + venda.getQuantidadeExemplares());
         // +venda.getQuantidadeExemplares()
-        preco.setText("....");
+        preco_uni.setText("" + venda.getValorAluguel());
         // +venda.getValorAluguel()
     }
+
 
     public Venda getSelectedVenda() {
         return selectedVenda;
