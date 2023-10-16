@@ -9,94 +9,94 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="454.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaLivroController">
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="794.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaLivroController">
    <children>
-      <Label fx:id="id" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="13.0" text="Id" textAlignment="CENTER">
+      <Label fx:id="id" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="24.0" text="Id" textAlignment="CENTER">
          <font>
-            <Font size="8.0" />
+            <Font size="11.0" />
          </font>
          <HBox.margin>
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <Label fx:id="titulo" minHeight="-Infinity" prefHeight="20.0" prefWidth="140.0" text="Titulo" textAlignment="CENTER">
+      <Label fx:id="titulo" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="34.0" prefWidth="967.0" text="Titulo" textAlignment="CENTER">
          <font>
-            <Font size="8.0" />
+            <Font size="11.0" />
          </font>
          <HBox.margin>
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <Label fx:id="autor" minHeight="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Autor" textAlignment="CENTER">
+      <Label fx:id="autor" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="116.0" text="Autor" textAlignment="CENTER">
          <font>
-            <Font size="8.0" />
+            <Font size="11.0" />
          </font>
          <HBox.margin>
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <Label fx:id="genero" minHeight="-Infinity" prefHeight="20.0" prefWidth="61.0" text="Genero" textAlignment="CENTER">
+      <Label fx:id="genero" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="94.0" text="Genero" textAlignment="CENTER">
          <font>
-            <Font size="8.0" />
+            <Font size="11.0" />
          </font>
          <HBox.margin>
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <Label fx:id="ano" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="35.0" text="Ano" textAlignment="CENTER">
+      <Label fx:id="ano" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="41.0" text="Ano" textAlignment="CENTER">
          <font>
-            <Font size="8.0" />
+            <Font size="11.0" />
          </font>
          <HBox.margin>
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <Label fx:id="quant_pag" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="21.0" text="Paginas" textAlignment="CENTER">
+      <Label fx:id="quant_pag" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="39.0" text="Paginas" textAlignment="CENTER">
          <font>
-            <Font size="8.0" />
+            <Font size="11.0" />
          </font>
          <HBox.margin>
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <Label fx:id="quant_stq" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="21.0" text="Quant" textAlignment="CENTER">
+      <Label fx:id="quant_stq" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="34.0" text="Quant" textAlignment="CENTER">
          <font>
-            <Font size="8.0" />
+            <Font size="11.0" />
          </font>
          <HBox.margin>
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <Label fx:id="preco_uni" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="34.0" text="Preco" textAlignment="CENTER">
+      <Label fx:id="preco_uni" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="68.0" text="Preco" textAlignment="CENTER">
          <font>
-            <Font size="8.0" />
+            <Font size="11.0" />
          </font>
          <HBox.margin>
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
-      <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="67.0" spacing="4.0">
+      <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="92.0" spacing="4.0">
          <children>
-            <Button fx:id="editar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#editarPU" prefHeight="17.0" prefWidth="17.0" style="-fx-background-color: #FBFDFF;">
+            <Button fx:id="editar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#editarPU" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #FBFDFF;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <graphic>
-                  <ImageView fitHeight="17.0" fitWidth="17.0">
+                  <ImageView fitHeight="23.0" fitWidth="23.0">
                      <image>
-                        <Image url="@edit2Edit_icon.png" />
+                        <Image url="@icons/edit2Edit_icon.png" />
                      </image>
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="delete" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deletePU" prefHeight="17.0" prefWidth="17.0" style="-fx-background-color: #FBFDFF;">
+            <Button fx:id="delete" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deletePU" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #FBFDFF;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <graphic>
-                  <ImageView fitHeight="17.0" fitWidth="17.0">
+                  <ImageView fitHeight="23.0" fitWidth="23.0">
                      <image>
-                        <Image url="@trashDelete_icon.png" />
+                        <Image url="@icons/trashDelete_icon.png" />
                      </image>
                   </ImageView>
                </graphic>

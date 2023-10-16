@@ -32,7 +32,7 @@ public class SrchClienteController {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/TelaVenda.fxml"));
                 
                 Parent root = fxmlLoader.load();
-                VendaController cl = fxmlLoader.getController();
+                TelaVendaController cl = fxmlLoader.getController();
 
                 cl.setSelectedCliente(selectedCliente);
 

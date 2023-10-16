@@ -4,22 +4,21 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import DAO.FuncionarioDAO;
+// import DAO.FuncionarioDAO;
 import model.entity.Funcionario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class FuncionariosController extends NavController {
+public class TelaFuncionariosController extends NavController {
+
     @FXML private TextField srchFuncionario;
-    @FXML private Button addFuncionario;
     @FXML private VBox funcionariosLayout;
     
     public void procurarFuncionario(ActionEvent event) throws Exception {
@@ -39,10 +38,12 @@ public class FuncionariosController extends NavController {
     
     public void initialize() {
         try {
-            FuncionarioDAO controllerFuncionario = new FuncionarioDAO();
+            // FuncionarioDAO controllerFuncionario = new FuncionarioDAO();
 
+            // List<Funcionario> funcionario = new ArrayList<>(controllerFuncionario.listar());
 
-            List<Funcionario> funcionario = new ArrayList<>(controllerFuncionario.listar());
+            List<Funcionario> funcionario = new ArrayList<>(funcionarioTeste());
+
 
             for (Funcionario func : funcionario) {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/ListaFuncionario.fxml"));

@@ -36,7 +36,8 @@ public class SrchItemController {
 
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/TelaVenda.fxml"));
                 Parent root = fxmlLoader.load();
-                VendaController sr = fxmlLoader.getController();
+                TelaVendaController sr = fxmlLoader.getController();
+
                 sr.addCarrinho(itemsCarrinho);
 
                 sr.printVendas();
@@ -109,7 +110,7 @@ public class SrchItemController {
 
     public List<Venda> getItemsCarrinho() { return itemsCarrinho; }
 
-    // public void setItemsCarrinho(List<Venda> itemsCarrinho) {
-    //     itemsCarrinho = itemsCarrinho;
-    // }
+    public void setItemsCarrinho(List<Venda> items) {
+        itemsCarrinho = items;
+    }
 }

@@ -1,6 +1,7 @@
 package controller;
 
 import model.entity.Venda;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -16,10 +17,21 @@ public class ListaCarrinhoController {
 
     private Venda selectedVenda;
 
-
     @FXML
     void deletePU(ActionEvent event) {
-        System.out.println("<Abrindo Pop-Up Confirmação>");
+        try {
+
+            TelaVendaController.getCarrinhoVenda().remove(selectedVenda);
+
+            SrchItemController si = new SrchItemController();
+            si.getItemsCarrinho().remove(selectedVenda);
+
+            NavController e = new NavController();
+            e.mudarTelaVenda(event);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void setData() { // apenas para teste (REMOVA)

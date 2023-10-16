@@ -26,7 +26,12 @@ public class ListaFuncionarioController {
 
     @FXML
     void deletePU(ActionEvent event) throws Exception {
-        System.out.println("<Abrindo Pop-Up Confirmação>");
+        System.out.println("<Deletando Funcionario: " + selectedFuncionario.getLogin() + ">");
+        
+        // delete no Banco e recarrege a tela
+
+        NavController e = new NavController();
+        e.mudarTelaFuncionarios(event); // regarrega a tela
     }
 
     @FXML

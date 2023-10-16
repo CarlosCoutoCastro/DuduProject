@@ -17,10 +17,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class VendaController extends NavController {
+public class TelaVendaController extends NavController {
 
-    @FXML private Button addCarrinho;
-    @FXML private Button addCliente;
     @FXML private Button finalVenda;
     @FXML private Label precoTotal;
 
@@ -148,6 +146,11 @@ public class VendaController extends NavController {
         System.out.println("Venda Finalizada.");
         List<Venda> clear = new ArrayList<>();
         carrinhoVenda = clear;
+        
+        SrchItemController si = new SrchItemController();
+        si.setItemsCarrinho(clear);
+
+        mudarTelaVenda(event);
     }
 
 
@@ -168,8 +171,14 @@ public class VendaController extends NavController {
         for (Venda venda : itemsCarrinho) {
             System.out.println(venda.getTitulo());
         }
-        carrinhoVenda.addAll(itemsCarrinho);
+        carrinhoVenda = itemsCarrinho;
     }
+    public static List<Venda> getCarrinhoVenda() { return carrinhoVenda; }
+
+    public static void setCarrinhoVenda(List<Venda> carrinho) {
+        carrinhoVenda = carrinho;
+    }
+
     
 
     public Cliente getSelectedCliente() { return selectedCliente; }

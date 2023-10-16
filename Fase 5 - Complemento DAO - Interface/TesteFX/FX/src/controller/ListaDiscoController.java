@@ -26,9 +26,13 @@ public class ListaDiscoController {
 
 
     @FXML
-    void deletePU(ActionEvent event) {
-        System.out.println("<Abrindo Pop-Up Confirmação>");
+    void deletePU(ActionEvent event) throws Exception {
+        System.out.println("<Deletando Disco: " + selectedDisco.getTitulo() + ">");
+        
+        // delete no Banco e recarrege a tela
 
+        NavController e = new NavController();
+        e.mudarTelaEstqDiscos(event); // recarrega a tela
     }
 
     @FXML

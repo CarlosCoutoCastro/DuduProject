@@ -59,3 +59,16 @@ UNION
 SELECT tb_discos.titulo, objetos.Quantidade_exemplares, objetos.Valor_aluguel
 FROM tb_discos
 INNER JOIN objetos ON tb_discos.codigo_objeto = objetos.codigo_objeto;
+
+CREATE VIEW view_alugueis AS
+SELECT
+    c.nome AS nome,
+    COALESCE(l.titulo, d.titulo) AS titulo,
+    o.valor_aluguel AS valor_aluguel,
+    a.data_aquisicao AS data_aquisicao,
+    a.data_devolucao AS data_devolucao
+FROM tb_alugueis AS a
+JOIN tb_clientes AS c ON a.cpf_cliente = c.cpf
+JOIN objetos AS o ON a.codigo_objeto = o.codigo_objeto
+LEFT JOIN tb_livros AS l ON a.codigo_objeto = l.codigo_objeto
+LEFT JOIN tb_discos AS d ON a.codigo_objeto = d.codigo_objeto;

@@ -44,8 +44,13 @@ public class ListaClientesController {
     
 
     @FXML
-    void deletePU(ActionEvent event) {
-        System.out.println("<Abrindo Pop-Up Confirmação>");
+    void deletePU(ActionEvent event) throws Exception {
+        System.out.println("<Deletando Cliente: " + cliente.getNome() + ">");
+        
+        // delete no Banco e recarrege a tela
+
+        NavController e = new NavController();
+        e.mudarTelaClientes(event); // recarrega a tela
     }
 
 

@@ -11,10 +11,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import DAO.FuncionarioDAO;
+// import DAO.FuncionarioDAO;
 import model.entity.Funcionario;
 
-public class LoginController {
+public class TelaLoginController {
     @FXML
     private TextField usuario;
     @FXML

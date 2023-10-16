@@ -11,15 +11,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class EstqDiscoController extends NavController {
+public class TelaEstqDiscoController extends NavController {
+
     @FXML private TextField srchDisco;
-    @FXML private Button addDisco;
     @FXML private VBox discosLayout;
     
     public void procurarDisco(ActionEvent event) throws Exception {
@@ -39,10 +38,14 @@ public class EstqDiscoController extends NavController {
     
     public void initialize() {
         try {
-            DiscoBO controllerDisco = new DiscoBO();
+            // DiscoBO controllerDisco = new DiscoBO();
 
-            List<Disco> discos = new ArrayList<>(controllerDisco.listar());
-            System.out.println("----------------Cheguei aqui--------------------");
+            // List<Disco> discos = new ArrayList<>(controllerDisco.listar());
+            // System.out.println("----------------Cheguei aqui--------------------");
+
+
+            List<Disco> discos = new ArrayList<>(discosTeste());
+
             for (Disco disco : discos) {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/ListaDisco.fxml"));
                 HBox hBox = fxmlLoader.load();

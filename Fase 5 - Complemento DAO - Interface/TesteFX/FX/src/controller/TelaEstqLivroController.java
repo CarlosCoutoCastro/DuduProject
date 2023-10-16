@@ -12,15 +12,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class EstqLivroController extends NavController {
+public class TelaEstqLivroController extends NavController {
+    
     @FXML private TextField srchLivro;
-    @FXML private Button addLivro;
     @FXML private VBox livrosLayout;
     
     public void procurarLivro(ActionEvent event) throws Exception {
@@ -40,9 +39,11 @@ public class EstqLivroController extends NavController {
     
     public void initialize() {
         try {
-            LivroBO controllerLivro = new LivroBO();
+            // LivroBO controllerLivro = new LivroBO();
 
-            List<Livro> livros = new ArrayList<>(controllerLivro.listar());
+            // List<Livro> livros = new ArrayList<>(controllerLivro.listar());
+            
+            List<Livro> livros = new ArrayList<>(livroTeste());
 
             for (Livro livro : livros) {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/ListaLivro.fxml"));
