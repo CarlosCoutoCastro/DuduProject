@@ -5,7 +5,10 @@ import java.util.List;
 import DAO.BaseDao;
 import DAO.ClienteDAO;
 import model.entity.Cliente;
+<<<<<<< HEAD
 import model.entity.Cliente;
+=======
+>>>>>>> origin/master
 
 public class ClienteBO {
 	ClienteDAO conexaoCliente = new ClienteDAO();
@@ -24,17 +27,23 @@ public class ClienteBO {
 		if (cliente == null) {
 			return conexaoCliente.inserir(cli);
 		} else {
+<<<<<<< HEAD
 			cli.setId(cliente.getId());
 			conexaoCliente.alterar(cli);
+=======
+>>>>>>> origin/master
 			System.out.println("POP - UP - CPF já existente");
 			return null;
 		}
 	}
 
+<<<<<<< HEAD
 	public void alterar(Cliente cli) {
 			conexaoCliente.alterar(cli);
 	}
 
+=======
+>>>>>>> origin/master
 	public void delete(Cliente cli) {
 
 		Cliente cliente = conexaoCliente.verificarCPF(cli);
@@ -50,10 +59,17 @@ public class ClienteBO {
 		Cliente clientePorID = conexaoCliente.buscar(cli);
 		if (clientePorID == null) {
 			Cliente clientePorCPF = conexaoCliente.verificarCPF(cli);
+<<<<<<< HEAD
 			if (clientePorCPF == null) {
 				System.out.println("POP - UP - Cliente não existente");
 				return null;
 			} else {
+=======
+			if(clientePorCPF == null){
+				System.out.println("POP - UP - Cliente não existente");
+				return null;
+			}else{
+>>>>>>> origin/master
 				return clientePorCPF;
 			}
 		} else {
@@ -62,6 +78,7 @@ public class ClienteBO {
 
 	}
 
+<<<<<<< HEAD
 	public List<Cliente> listar() {
 		return conexaoCliente.listar();
 	}
@@ -85,4 +102,14 @@ public class ClienteBO {
 		}
 		
 	}
+=======
+	public List<Cliente> listar(){
+		return conexaoCliente.listar();
+	}
+
+
+
+
+
+>>>>>>> origin/master
 }

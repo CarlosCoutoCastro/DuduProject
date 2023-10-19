@@ -16,7 +16,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaClientesController">
+=======
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaClientesController">
+>>>>>>> origin/master
    <children>
       <VBox minWidth="-Infinity" prefHeight="538.0" prefWidth="140.0">
          <children>
@@ -88,7 +92,11 @@
                         <Insets top="7.0" />
                      </VBox.margin>
                   </Button>
+<<<<<<< HEAD
                   <Button fx:id="funcBotao" alignment="BASELINE_LEFT" minHeight="-Infinity" mnemonicParsing="false" onAction="#mudarTelaFuncionarios" prefHeight="30.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: #f6f6f6;" text="Funcionários">
+=======
+                  <Button alignment="BASELINE_LEFT" minHeight="-Infinity" mnemonicParsing="false" onAction="#mudarTelaFuncionarios" prefHeight="30.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: #f6f6f6;" text="Funcionários">
+>>>>>>> origin/master
                      <font>
                         <Font name="Work Sans SemiBold" size="12.0" />
                      </font>
@@ -175,7 +183,11 @@
                      </cursor>
                   </TextField>
                   <Pane maxWidth="1.7976931348623157E308" prefHeight="22.0" prefWidth="793.0" />
+<<<<<<< HEAD
                   <Button fx:id="botaoAdicionar" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#adicionarCliente" prefHeight="28.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: #363B3E;" text="Adicionar Cliente" textFill="WHITE">
+=======
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#adicionarCliente" prefHeight="28.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: #363B3E;" text="Adicionar Cliente" textFill="WHITE">
+>>>>>>> origin/master
                      <font>
                         <Font name="Work Sans Medium" size="11.0" />
                      </font>
@@ -194,7 +206,11 @@
                      <children>
                         <HBox alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="32.0" prefWidth="423.0" style="-fx-background-color: #FBFDFF; -fx-border-color: #efefef;">
                            <children>
+<<<<<<< HEAD
                               <Label maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="334.0" text="Nome" textAlignment="CENTER" textFill="#616a6e">
+=======
+                              <Label maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="678.0" text="Nome" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                  <font>
                                     <Font size="10.0" />
                                  </font>
@@ -202,7 +218,11 @@
                                     <Insets left="7.0" />
                                  </HBox.margin>
                               </Label>
+<<<<<<< HEAD
                               <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="230.0" text="Endereço" textAlignment="CENTER" textFill="#616a6e">
+=======
+                              <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="167.0" text="Endereço" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                  <font>
                                     <Font size="10.0" />
                                  </font>
@@ -210,7 +230,11 @@
                                     <Insets left="7.0" />
                                  </HBox.margin>
                               </Label>
+<<<<<<< HEAD
                               <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="194.0" text="CPF" textAlignment="CENTER" textFill="#616a6e">
+=======
+                              <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="84.0" text="CPF" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                  <font>
                                     <Font size="10.0" />
                                  </font>
@@ -218,7 +242,19 @@
                                     <Insets left="7.0" />
                                  </HBox.margin>
                               </Label>
+<<<<<<< HEAD
                               <Label layoutX="350.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="94.0" text="Opções" textAlignment="CENTER" textFill="#616a6e">
+=======
+                              <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="117.0" text="Telefone" textAlignment="CENTER" textFill="#616a6e">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="7.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label layoutX="350.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="92.0" text="Opções" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                  <font>
                                     <Font size="10.0" />
                                  </font>

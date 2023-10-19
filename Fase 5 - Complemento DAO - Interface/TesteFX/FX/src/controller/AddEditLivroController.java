@@ -1,5 +1,6 @@
 package controller;
 
+<<<<<<< HEAD
 import model.bo.LivroBO;
 import model.entity.Disco;
 import model.entity.Livro;
@@ -7,11 +8,19 @@ import model.entity.Livro;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+=======
+import model.entity.Livro;
+
+import java.sql.Date;
+>>>>>>> origin/master
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+<<<<<<< HEAD
 import javafx.scene.control.Label;
+=======
+>>>>>>> origin/master
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -33,6 +42,7 @@ public class AddEditLivroController {
     private TextField preco;
     @FXML
     private Button confirm;
+<<<<<<< HEAD
     @FXML
     private Label erroTitulo;
 
@@ -92,15 +102,27 @@ public class AddEditLivroController {
             }
         }
 
+=======
+
+    @FXML
+    void confirmar(ActionEvent event) {
+        System.out.println("pop-up aberto");
+        Stage stage = (Stage) confirm.getScene().getWindow();
+        stage.close();
+>>>>>>> origin/master
     }
 
     public void setData(Livro livro) {
 
+<<<<<<< HEAD
         setSelectedlLivro(livro);
+=======
+>>>>>>> origin/master
         nome.setText(livro.getTitulo());
         autor.setText(livro.getAutor());
         genero.setText(livro.getGenero());
 
+<<<<<<< HEAD
         ano.setText("" + livro.getdataLancamento());
         paginas.setText("" + livro.getQuantidadePaginas());
         quantEstq.setText("" + livro.getQuantidadeExemplares());
@@ -113,6 +135,12 @@ public class AddEditLivroController {
 
     public Livro getSelectedlLivro() {
         return selectedLivro;
+=======
+        ano.setText(""+livro.getdataLancamento());
+        paginas.setText(""+livro.getQuantidadePaginas());
+        quantEstq.setText(""+livro.getQuantidadeExemplares());
+        preco.setText(""+livro.getValorAluguel());
+>>>>>>> origin/master
     }
 
 }

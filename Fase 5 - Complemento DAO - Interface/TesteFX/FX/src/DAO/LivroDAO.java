@@ -68,7 +68,11 @@ public class LivroDAO extends BaseDaoImpl<Livro> {
 		Connection con = getConnection();
 		String sql = "UPDATE tb_livros SET titulo = ?, genero = ? ," +
 				"autor = ?, data_de_lancamento = ?," +
+<<<<<<< HEAD
 				"quantidade_pagina = ? WHERE codigo_objeto = ?";
+=======
+				"quantidade_paginas = ? WHERE codigo_objeto = ?";
+>>>>>>> origin/master
 
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
@@ -168,6 +172,7 @@ public class LivroDAO extends BaseDaoImpl<Livro> {
 		return Livros;
 	}
 
+<<<<<<< HEAD
 	public List<Livro> pesquisaTotal(Livro livro) {
 		Connection con = getConnection();
 		String tb_livro = "SELECT * FROM tb_livros WHERE titulo = ? or genero = ? or autor = ? ";
@@ -252,6 +257,8 @@ public class LivroDAO extends BaseDaoImpl<Livro> {
 
 	// 
 
+=======
+>>>>>>> origin/master
 	public Livro pesquisaTitulo(Livro liv) {
 		Connection con = getConnection();
 		String sql = "SELECT * FROM tb_livros WHERE titulo = ?";

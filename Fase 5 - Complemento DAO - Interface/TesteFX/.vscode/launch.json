@@ -9,6 +9,7 @@
             "name": "Telas",
             "request": "launch",
             "mainClass": "view.Telas",
+<<<<<<< HEAD
             "projectName": "TesteFX_2c086d3d"
         },
         {
@@ -16,6 +17,8 @@
             "name": "Telas",
             "request": "launch",
             "mainClass": "view.Telas",
+=======
+>>>>>>> origin/master
             "projectName": "TesteFX_d150286"
         },
         {
@@ -31,7 +34,11 @@
             "request": "launch",
             "mainClass": "view.Telas",
             "projectName": "TesteFX",
+<<<<<<< HEAD
             "vmArgs": "--module-path \"C:/Program Files/Java/LibFX\" --add-modules javafx.controls,javafx.fxml"
+=======
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-11.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+>>>>>>> origin/master
         },
         {
             "type": "java",

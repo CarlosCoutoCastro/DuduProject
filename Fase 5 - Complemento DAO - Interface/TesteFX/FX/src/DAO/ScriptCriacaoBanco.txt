@@ -35,6 +35,7 @@ create table tb_clientes(
 );
 
 create table tb_alugueis (
+<<<<<<< HEAD
     codigo_aluguel serial primary key,
     cpf_cliente varchar(30) not null,
     codigo_objeto int not null,
@@ -46,11 +47,25 @@ create table tb_alugueis (
 
 create table tb_funcionarios (
 	codigo_funcionario serial unique,
+=======
+	codigo_aluguel serial primary key,
+	cpf_cliente varchar(30) not null,
+	codigo_objeto int not null,
+	data_aquisicao Date not null,
+	data_devolucao Date not null,
+	foreign key(cpf_cliente) references tb_clientes(cpf),
+	foreign key(codigo_objeto) references objetos(codigo_objeto)
+);
+
+create table tb_funcionarios (
+	codigo_funcionario int ,
+>>>>>>> origin/master
 	login varchar(30) primary key,
 	senha varchar(30) not null,
 	funcao varchar(20) not null
 );
 
+<<<<<<< HEAD
 Create view view_vendas AS
 SELECT tb_livros.titulo AS titulo, objetos.Quantidade_exemplares, objetos.Valor_aluguel, tb_livros.codigo_objeto AS codigo_objeto
 FROM tb_livros
@@ -61,6 +76,17 @@ FROM tb_discos
 INNER JOIN objetos ON tb_discos.codigo_objeto = objetos.codigo_objeto;
 
 
+=======
+CREATE VIEW view_vendas AS
+SELECT tb_livros.titulo AS titulo, objetos.Quantidade_exemplares, objetos.Valor_aluguel
+FROM tb_livros
+INNER JOIN objetos ON tb_livros.codigo_objeto = objetos.codigo_objeto
+UNION
+SELECT tb_discos.titulo, objetos.Quantidade_exemplares, objetos.Valor_aluguel
+FROM tb_discos
+INNER JOIN objetos ON tb_discos.codigo_objeto = objetos.codigo_objeto;
+
+>>>>>>> origin/master
 CREATE VIEW view_alugueis AS
 SELECT
     c.nome AS nome,
@@ -72,6 +98,7 @@ FROM tb_alugueis AS a
 JOIN tb_clientes AS c ON a.cpf_cliente = c.cpf
 JOIN objetos AS o ON a.codigo_objeto = o.codigo_objeto
 LEFT JOIN tb_livros AS l ON a.codigo_objeto = l.codigo_objeto
+<<<<<<< HEAD
 LEFT JOIN tb_discos AS d ON a.codigo_objeto = d.codigo_objeto;
 
 
@@ -122,3 +149,6 @@ $$ LANGUAGE plpgsql;
 
 
 
+=======
+LEFT JOIN tb_discos AS d ON a.codigo_objeto = d.codigo_objeto;
+>>>>>>> origin/master

@@ -9,7 +9,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="794.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaLivroController">
+=======
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="794.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaLivroController">
+>>>>>>> origin/master
    <children>
       <Label fx:id="id" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="24.0" text="Id" textAlignment="CENTER">
          <font>
@@ -43,7 +47,11 @@
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
+<<<<<<< HEAD
       <Label fx:id="ano" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="101.0" text="Ano" textAlignment="CENTER">
+=======
+      <Label fx:id="ano" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="41.0" text="Ano" textAlignment="CENTER">
+>>>>>>> origin/master
          <font>
             <Font size="11.0" />
          </font>

@@ -4,7 +4,10 @@ import java.util.List;
 
 import DAO.BaseDao;
 import DAO.FuncionarioDAO;
+<<<<<<< HEAD
 import model.entity.Disco;
+=======
+>>>>>>> origin/master
 import model.entity.Funcionario;
 
 public class FuncionarioBO {
@@ -18,6 +21,7 @@ public class FuncionarioBO {
 		}
 	}
 
+<<<<<<< HEAD
 	public void alterar(Funcionario fun) {
 			System.out.println(fun.getId());
 			conexaoFuncionario.alterar(fun);
@@ -33,6 +37,16 @@ public class FuncionarioBO {
 			conexaoFuncionario.alterar(fun);
 			// System.out.println("POP-UP , Login já existente");
 
+=======
+	public long criar(Funcionario fun) {
+
+		Funcionario autenticarFuncionario = conexaoFuncionario.VerificarLogin(fun);
+		if (autenticarFuncionario == null) {
+			return conexaoFuncionario.inserir(fun);
+		} else {
+			System.out.println("POP-UP , Login já existente");
+			return (Long) null;
+>>>>>>> origin/master
 		}
 	}
 
@@ -53,10 +67,17 @@ public class FuncionarioBO {
 			Funcionario funcionarioPorAutenticacao = conexaoFuncionario.autenticar(fun);
 			if (funcionarioPorAutenticacao == null) {
 				Funcionario funcionarioPorLogin = conexaoFuncionario.VerificarLogin(fun);
+<<<<<<< HEAD
 				if (funcionarioPorLogin == null) {
 					System.out.println("POP UP - Funcionario Inexistente ");
 					return null;
 				} else
+=======
+				if(funcionarioPorLogin == null){
+					System.out.println("POP UP - Funcionario Inexistente ");
+					return null;
+				}else
+>>>>>>> origin/master
 					return funcionarioPorLogin;
 			} else
 				return funcionarioPorAutenticacao;
@@ -66,11 +87,16 @@ public class FuncionarioBO {
 
 	}
 
+<<<<<<< HEAD
 	public List<Funcionario> listar() {
+=======
+	public List<Funcionario> listar(){
+>>>>>>> origin/master
 		List<Funcionario> funcionarios = conexaoFuncionario.listar();
 		return funcionarios;
 	}
 
+<<<<<<< HEAD
 	public List<Funcionario> pesquisaTotal(Funcionario funcionario) {
 		if (funcionario != null) {
 			return conexaoFuncionario.pesquisaTotal(funcionario);
@@ -96,4 +122,6 @@ public class FuncionarioBO {
 
 	}
 
+=======
+>>>>>>> origin/master
 }

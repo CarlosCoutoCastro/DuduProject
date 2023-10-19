@@ -11,7 +11,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <VBox prefHeight="167.0" prefWidth="724.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddEditLivroController">
+=======
+
+<VBox prefHeight="167.0" prefWidth="724.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddEditLivroController">
+>>>>>>> origin/master
    <children>
       <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="684.0">
          <children>
@@ -118,7 +123,10 @@
             <Insets bottom="10.0" />
          </VBox.margin>
       </HBox>
+<<<<<<< HEAD
       <Label fx:id="erroTitulo" text="Titulo do Livro já Existente" textAlignment="CENTER" textFill="#dc4c4c" visible="false" />
+=======
+>>>>>>> origin/master
       <HBox alignment="CENTER_RIGHT">
          <children>
             <Button fx:id="confirm" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#confirmar" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #5EB357; -fx-background-radius: 10;" text="Confirmar" textFill="WHITE">

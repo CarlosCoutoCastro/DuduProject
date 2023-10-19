@@ -1,10 +1,14 @@
 package controller;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
 import model.bo.DiscoBO;
+=======
+
+>>>>>>> origin/master
 import model.entity.Disco;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,6 +20,7 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class ListaDiscoController {
+<<<<<<< HEAD
     @FXML
     private Label id;
     @FXML
@@ -47,6 +52,26 @@ public class ListaDiscoController {
 
         TelaEstqDiscoController.listaDiscos = discoController.listar();
 
+=======
+    @FXML private Label id;
+    @FXML private Label titulo;
+    @FXML private Label banda;
+    @FXML private Label estilo;
+    @FXML private Label quant_stq;
+    @FXML private Label preco_uni;
+    @FXML private Button delete;
+    @FXML private Button editar;
+
+    private Disco selectedDisco;
+
+
+    @FXML
+    void deletePU(ActionEvent event) throws Exception {
+        System.out.println("<Deletando Disco: " + selectedDisco.getTitulo() + ">");
+        
+        // delete no Banco e recarrege a tela
+
+>>>>>>> origin/master
         NavController e = new NavController();
         e.mudarTelaEstqDiscos(event); // recarrega a tela
     }
@@ -60,19 +85,28 @@ public class ListaDiscoController {
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> origin/master
             // preenche a tela aberta con os dados desse funcionario
             AddEditDiscoController aef = fxmlLoader.getController();
             aef.setData(getSelectedDisco());
 
             stage.show();
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> origin/master
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
 
+<<<<<<< HEAD
     public void setData(Disco disco) {
 
         setSelectedDisco(disco);
@@ -93,6 +127,30 @@ public class ListaDiscoController {
     public Disco getSelectedDisco() {
         return selectedDisco;
     }
+=======
+
+    public void setData(Disco disco) {
+
+        setSelectedDisco(disco);
+        id.setText(""+disco.getId());
+        titulo.setText(disco.getTitulo());
+        banda.setText(disco.getNomeBanda());
+        estilo.setText(disco.getEstilo());
+        quant_stq.setText(""+disco.getQuantidadeExemplares());
+        preco_uni.setText(""+disco.getValorAluguel());
+    } 
+    
+    // visibilidade dos controles para somente gerentes
+    public void userPermissions(Boolean controlVisibility) {
+        editar.setVisible(controlVisibility);
+        editar.setManaged(controlVisibility);
+        delete.setVisible(controlVisibility);
+        delete.setManaged(controlVisibility);
+    }
+
+
+    public Disco getSelectedDisco() { return selectedDisco; }
+>>>>>>> origin/master
 
     public void setSelectedDisco(Disco selectedDisco) {
         this.selectedDisco = selectedDisco;

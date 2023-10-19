@@ -1,10 +1,15 @@
 package controller;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
 import model.bo.LivroBO;
+=======
+import java.sql.Date;
+
+>>>>>>> origin/master
 import model.entity.Livro;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -42,6 +47,7 @@ public class ListaLivroController {
     @FXML
     void deletePU(ActionEvent event) throws Exception {
         System.out.println("<Deletando Livro: " + selectedLivro.getTitulo() + ">");
+<<<<<<< HEAD
         LivroBO livroController = new LivroBO();
 
         livroController.Deletar(selectedLivro);
@@ -49,6 +55,10 @@ public class ListaLivroController {
         TelaEstqLivroController.listaLivros = clear;
 
         TelaEstqLivroController.listaLivros = livroController.listar();
+=======
+
+        // delete no Banco e recarrege a tela
+>>>>>>> origin/master
 
         NavController e = new NavController();
         e.mudarTelaEstqLivros(event); // recarrega a tela
@@ -78,6 +88,7 @@ public class ListaLivroController {
 
     public void setData(Livro livro) {
 
+<<<<<<< HEAD
         System.out.println("SETDATA");
         setSelectedLivro(livro);
         id.setText("" + livro.getId());
@@ -88,12 +99,30 @@ public class ListaLivroController {
         quant_pag.setText("" + livro.getQuantidadePaginas());
         quant_stq.setText("" + livro.getQuantidadeExemplares());
         preco_uni.setText("" + livro.getValorAluguel());
+=======
+        setSelectedLivro(livro);
+        id.setText(""+livro.getId());
+        titulo.setText(livro.getTitulo());
+        autor.setText(livro.getAutor());
+        genero.setText(livro.getGenero());
+        ano.setText(""+livro.getdataLancamento());
+        quant_pag.setText(""+livro.getQuantidadePaginas());
+        quant_stq.setText(""+livro.getQuantidadeExemplares());
+        preco_uni.setText(""+livro.getValorAluguel());
+>>>>>>> origin/master
     }
 
     // visibilidade dos controles para somente gerentes
     public void userPermissions(Boolean controlVisibility) {
+<<<<<<< HEAD
         editar.setDisable(!controlVisibility);
         delete.setDisable(!controlVisibility);
+=======
+        editar.setVisible(controlVisibility);
+        editar.setManaged(controlVisibility);
+        delete.setVisible(controlVisibility);
+        delete.setManaged(controlVisibility);
+>>>>>>> origin/master
     }
 
     public Livro getSelectedLivro() {

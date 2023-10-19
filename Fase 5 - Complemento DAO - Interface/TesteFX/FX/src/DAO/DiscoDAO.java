@@ -190,6 +190,7 @@ public class DiscoDAO extends BaseDaoImpl<Disco> {
 		return null;
 	}
 
+<<<<<<< HEAD
 
 	public List<Disco> pesquisaTotal(Disco disco) {
 		Connection con = getConnection();
@@ -232,6 +233,8 @@ public class DiscoDAO extends BaseDaoImpl<Disco> {
 
 	
 
+=======
+>>>>>>> origin/master
 	private Long CriarObjeto(Objeto objeto) {
 		ObjetoDAO obDAO = new ObjetoDAO();
 		long id_objeto = obDAO.inserir(objeto);

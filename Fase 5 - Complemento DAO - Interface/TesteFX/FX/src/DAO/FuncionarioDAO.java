@@ -133,6 +133,7 @@ public class FuncionarioDAO extends BaseDaoImpl<Funcionario> {
 		return Funcionarios;
 	}
 
+<<<<<<< HEAD
 	public List<Funcionario> pesquisaTotal(Funcionario funcionario) {
 		Connection con = getConnection();
 		String tb_Funcionario = "SELECT * FROM tb_Funcionarios WHERE login = ? or funcao = ? ";
@@ -165,6 +166,8 @@ public class FuncionarioDAO extends BaseDaoImpl<Funcionario> {
 		return Funcionarios;
 	}
 
+=======
+>>>>>>> origin/master
 	public Funcionario autenticar(Funcionario fun) {
 		Connection con = getConnection();
 		String sql = "SELECT * FROM tb_Funcionarios WHERE login = ? and senha = ?";

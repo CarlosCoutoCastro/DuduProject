@@ -9,7 +9,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="794.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaClientesController">
+=======
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="794.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaClientesController">
+>>>>>>> origin/master
    <children>
       <Label fx:id="nome" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="34.0" prefWidth="418.0" text="Nome" textAlignment="CENTER">
          <font>
@@ -19,7 +23,11 @@
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
+<<<<<<< HEAD
       <Label fx:id="endereco" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="230.0" text="Endereço" textAlignment="CENTER">
+=======
+      <Label fx:id="endereco" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="167.0" text="Endereço" textAlignment="CENTER">
+>>>>>>> origin/master
          <font>
             <Font size="11.0" />
          </font>
@@ -27,7 +35,19 @@
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
+<<<<<<< HEAD
       <Label fx:id="cpf" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="197.0" text="CPF" textAlignment="CENTER">
+=======
+      <Label fx:id="cpf" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="84.0" text="CPF" textAlignment="CENTER">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="7.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="telefone" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="117.0" text="Telefone" textAlignment="CENTER">
+>>>>>>> origin/master
          <font>
             <Font size="11.0" />
          </font>

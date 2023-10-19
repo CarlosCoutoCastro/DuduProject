@@ -1,6 +1,9 @@
 package DAO;
 
+<<<<<<< HEAD
 import java.sql.CallableStatement;
+=======
+>>>>>>> origin/master
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,9 +11,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 import model.bo.AluguelBO;
 import model.entity.Aluguel;
 import model.entity.Relatorio;
+=======
+import model.entity.Aluguel;
+>>>>>>> origin/master
 import model.entity.Venda;
 
 public class AluguelDAO extends BaseDaoImpl<Aluguel> {
@@ -19,17 +26,28 @@ public class AluguelDAO extends BaseDaoImpl<Aluguel> {
 		Connection con = getConnection();
 		String sql = "INSERT INTO tb_Alugueis (cpf_cliente,codigo_objeto,data_aquisicao,data_devolucao) "
 				+ "values (?,?,?,?)";
+<<<<<<< HEAD
 				System.out.println("INSERINDO ALUGUEL");
+=======
+>>>>>>> origin/master
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, alu.getCpfCliente());
 			ps.setInt(2, alu.getCodigoObjeto());
 			ps.setDate(3, alu.getDataAquisicao());
+<<<<<<< HEAD
 			ps.setDate(4, alu.getDataDevolucao());
 			ps.execute();
 			ps.close();
 
 			sql = "SELECT MAX(codigo_Aluguel) AS max_codigo FROM tb_Alugueis";
+=======
+			ps.setDate(3, alu.getDataDevolucao());
+			ps.execute();
+			ps.close();
+
+			sql = "SELECT MAX(codigo_Alugueis) AS max_codigo FROM tb_Alugueis";
+>>>>>>> origin/master
 			ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 			if (rs.next())
@@ -182,11 +200,18 @@ public class AluguelDAO extends BaseDaoImpl<Aluguel> {
 
 			while (rs.next()) {
 				Venda ven = new Venda();
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 				try {
 					ven.setTitulo(rs.getString("titulo"));
 					ven.setQuantidadeExemplares(rs.getInt("quantidade_exemplares"));
 					ven.setValorAluguel(rs.getFloat("valor_aluguel"));	
+<<<<<<< HEAD
 					ven.setIdObjeto(rs.getInt("codigo_objeto"));
+=======
+>>>>>>> origin/master
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -202,6 +227,7 @@ public class AluguelDAO extends BaseDaoImpl<Aluguel> {
 		return vendas;
 	}
 
+<<<<<<< HEAD
 	public List<Venda> pesquisarVendas(Venda venda) {
 		Connection con = getConnection();
 		String tb_vendas = "SELECT * FROM view_vendas WHERE titulo = ?";
@@ -425,4 +451,6 @@ public class AluguelDAO extends BaseDaoImpl<Aluguel> {
 		}
 	}
 
+=======
+>>>>>>> origin/master
 }

@@ -16,7 +16,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaFuncionariosController">
+=======
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaFuncionariosController">
+>>>>>>> origin/master
    <children>
       <VBox minWidth="-Infinity" prefHeight="538.0" prefWidth="140.0">
          <children>
@@ -202,7 +206,11 @@
                                     <Insets left="7.0" />
                                  </HBox.margin>
                               </Label>
+<<<<<<< HEAD
                               <Label maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="334.0" text="Login" textAlignment="CENTER" textFill="#616a6e">
+=======
+                              <Label maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="20.0" prefWidth="334.0" text="Nome" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                  <font>
                                     <Font size="10.0" />
                                  </font>
@@ -210,7 +218,11 @@
                                     <Insets left="7.0" />
                                  </HBox.margin>
                               </Label>
+<<<<<<< HEAD
                               <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="160.0" text="Função" textAlignment="CENTER" textFill="#616a6e">
+=======
+                              <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="116.0" text="Função" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                  <font>
                                     <Font size="10.0" />
                                  </font>
@@ -218,7 +230,11 @@
                                     <Insets left="7.0" />
                                  </HBox.margin>
                               </Label>
+<<<<<<< HEAD
                               <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="191.0" text="Senha" textAlignment="CENTER" textFill="#616a6e">
+=======
+                              <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="84.0" text="CPF" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                  <font>
                                     <Font size="10.0" />
                                  </font>
@@ -226,7 +242,27 @@
                                     <Insets left="7.0" />
                                  </HBox.margin>
                               </Label>
+<<<<<<< HEAD
                               <Label layoutX="350.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="91.0" text="Opções" textAlignment="CENTER" textFill="#616a6e">
+=======
+                              <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="148.0" text="Endereço" textAlignment="CENTER" textFill="#616a6e">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="7.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="68.0" text="Salário" textAlignment="CENTER" textFill="#616a6e">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="7.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label layoutX="350.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="92.0" text="Opções" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                  <font>
                                     <Font size="10.0" />
                                  </font>

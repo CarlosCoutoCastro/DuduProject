@@ -4,6 +4,7 @@ public class Venda {
     private String titulo;
     private int quantidadeExemplares;
     private double valorAluguel;
+<<<<<<< HEAD
     private int idObjeto;
 
      public Venda(String titulo, int quantidadeExemplares, double valorAluguel, int idObjeto) {
@@ -12,6 +13,9 @@ public class Venda {
         setValorAluguel(valorAluguel);
         setIdObjeto(idObjeto);
     }
+=======
+
+>>>>>>> origin/master
 
     public Venda(String titulo, int quantidadeExemplares, double valorAluguel) {
         setTitulo(titulo);
@@ -22,6 +26,7 @@ public class Venda {
     public Venda() {}
 
 
+<<<<<<< HEAD
     public int getIdObjeto() {
         return idObjeto;
     }
@@ -32,6 +37,16 @@ public class Venda {
 
     public void setTitulo(String titulo) {
             this.titulo = titulo;     
+=======
+    public String getTitulo() { return titulo; }
+
+    public void setTitulo(String titulo) {
+        if (titulo != null && !titulo.trim().isEmpty()) {
+            this.titulo = titulo;
+        } else {
+            throw new IllegalArgumentException("Título não pode ser vazio.");
+        }
+>>>>>>> origin/master
     }
 
 

@@ -1,5 +1,6 @@
 package controller;
 
+<<<<<<< HEAD
 import model.bo.ClienteBO;
 import model.entity.Cliente;
 
@@ -10,20 +11,30 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+=======
+import model.entity.Cliente;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+>>>>>>> origin/master
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AddEditClienteController {
 
     @FXML
+<<<<<<< HEAD
     private Label erroCliente;
     @FXML
+=======
+>>>>>>> origin/master
     private TextField nome;
     @FXML
     private TextField cpf;
     @FXML
     private TextField endereco;
     @FXML
+<<<<<<< HEAD
     private Button confirm;
 
     private Cliente selectedcliente;
@@ -79,10 +90,22 @@ public class AddEditClienteController {
                 // TEXT NO ADDEDITclienteCONTROLLER JÁ EXISTE ESTE TITULO
             }
         }
+=======
+    private TextField telefone;
+    @FXML
+    private Button confirm;
+
+    @FXML
+    void confirmar(ActionEvent event) {
+        System.out.println("pop-up aberto");
+        Stage stage = (Stage) confirm.getScene().getWindow();
+        stage.close();
+>>>>>>> origin/master
     }
 
     public void setData(Cliente cliente) {
 
+<<<<<<< HEAD
         setSelectedCliente(cliente);
         nome.setText(cliente.getNome());
         cpf.setText(cliente.getCpf());
@@ -95,5 +118,11 @@ public class AddEditClienteController {
 
     public Cliente getSelectedCliente() {
         return selectedcliente;
+=======
+        nome.setText(cliente.getNome());
+        cpf.setText(cliente.getCpf());
+        endereco.setText(cliente.getEndereco());
+        telefone.setText("0000000000");
+>>>>>>> origin/master
     }
 }

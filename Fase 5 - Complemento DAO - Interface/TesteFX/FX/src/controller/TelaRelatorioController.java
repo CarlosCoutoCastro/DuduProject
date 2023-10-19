@@ -1,17 +1,22 @@
 package controller;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.sql.CallableStatement;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+=======
+import java.time.LocalDate;
+>>>>>>> origin/master
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+<<<<<<< HEAD
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -62,10 +67,31 @@ public class TelaRelatorioController extends NavController {
 
         NavController e = new NavController();
         e.mudarTelaRelatorio(event);
+=======
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+
+public class TelaRelatorioController extends NavController {
+    
+    @FXML private Label vendaTotal;
+    @FXML private Label vendaDiscos;
+    @FXML private Label vendaLivros;
+    @FXML private Label lucroSemana;
+    @FXML private VBox aluguelLayout;
+    @FXML private DatePicker pickDate;
+
+
+    @FXML
+    void pesquisarData(ActionEvent event) {
+
+        LocalDate search = pickDate.getValue(); // data retorna LocalDate
+        // returna formato AAAA-MM-DD
+>>>>>>> origin/master
 
         System.out.println(search);
     }
 
+<<<<<<< HEAD
     @FXML
     void procurarCliente(ActionEvent event) throws Exception {
         Relatorio relatorioBase = new Relatorio();
@@ -110,20 +136,52 @@ public class TelaRelatorioController extends NavController {
     public void printRelatorios(List<Relatorio> relatorios) {
         try {
             for (Relatorio relatorio : relatorios) {
+=======
+    public void initialize() {
+        // ------ Parte de Teste -------//
+        Integer vl = 4;
+        Integer vd = 7;
+        Float lucro = 245.35f;
+
+        vendaLivros.setText("" + vl);
+        vendaDiscos.setText("" + vd);
+        vendaTotal.setText("" + (vd + vl));
+
+        lucroSemana.setText("" + lucro);
+        // -----------------------------//
+        try {
+
+            for (int i = 0; i < 7; i++) {
+
+>>>>>>> origin/master
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/ListaRelatorio.fxml"));
                 HBox hBox = fxmlLoader.load();
 
                 ListaRelatorioController lc = fxmlLoader.getController();
+<<<<<<< HEAD
                 lc.setData(relatorio);
 
                 aluguelLayout.getChildren().add(hBox);
             }
         } catch (Exception e) {
+=======
+                lc.setData();
+                
+                aluguelLayout.getChildren().add(hBox);
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+>>>>>>> origin/master
             // TODO: handle exception
         }
 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     // TODO: VendaTotal coloca a soma de todas as vendas, pegar do BD
 
     // TODO: VendaDiscos venda das vendas de discos pegar do BD
@@ -133,7 +191,11 @@ public class TelaRelatorioController extends NavController {
 
     // TODO: AluguelLayout coloca os items dinamicos em uma lista
 
+<<<<<<< HEAD
     // TODO: pesquisarData busca uma data no Banco de Dados e filtra a lista de
     // alugueis
+=======
+    // TODO: pesquisarData busca uma data no Banco de Dados e filtra a lista de alugueis
+>>>>>>> origin/master
 
 }

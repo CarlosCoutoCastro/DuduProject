@@ -11,7 +11,10 @@ import DAO.AluguelDAO;
 import model.entity.Aluguel;
 import model.entity.Cliente;
 import model.entity.Objeto;
+<<<<<<< HEAD
 import model.entity.Relatorio;
+=======
+>>>>>>> origin/master
 import model.entity.Venda;
 
 public class AluguelBO {
@@ -27,7 +30,11 @@ public class AluguelBO {
 		}
 	}
 
+<<<<<<< HEAD
 	public void criar(Aluguel alu) {
+=======
+	public long criar(Aluguel alu) {
+>>>>>>> origin/master
 
 		Cliente cliente = new Cliente("00", "000000", alu.getCpfCliente());
 		Objeto objeto = new Objeto(alu.getCodigoObjeto(), 0, 0);
@@ -36,6 +43,7 @@ public class AluguelBO {
 		if (autenticarCliente != null) {
 			Objeto autenticarObjeto = conexaoObjeto.buscar(objeto);
 			if (autenticarObjeto != null && autenticarObjeto.getQuantidadeExemplares() > 0) {
+<<<<<<< HEAD
 				System.out.println("PASSOU DA AUTENTICACAO");
 				int quantidadeExemplaresReduzida = autenticarObjeto.getQuantidadeExemplares() - 1;
 				autenticarObjeto.setQuantidadeExemplares(quantidadeExemplaresReduzida);
@@ -50,6 +58,21 @@ public class AluguelBO {
 		} else {
 			System.out.println("POP-UP CLIENTE NÃO EXISTENTE");
 			
+=======
+
+				int quantidadeExemplaresReduzida = autenticarObjeto.getQuantidadeExemplares() - 1;
+				autenticarObjeto.setQuantidadeExemplares(quantidadeExemplaresReduzida);
+				conexaoObjeto.alterar(autenticarObjeto); // Reduz o total de exemplares em -1;
+
+				return conexaoAluguel.inserir(alu);
+			} else {
+				System.out.println("POP-UP OBJETO NAO EXISTENTE OU SEM EXEMPLARES");
+				return (Long) null;
+			}
+		} else {
+			System.out.println("POP-UP CLIENTE NÃO EXISTENTE");
+			return (Long) null;
+>>>>>>> origin/master
 		}
 	}
 
@@ -105,6 +128,7 @@ public class AluguelBO {
 	public List<Venda> listarVendas(){
 		return conexaoAluguel.listarVendas();
 	}
+<<<<<<< HEAD
 	public List<Venda> pesquisarVendas(Venda venda){
 		if(venda != null){
 			return conexaoAluguel.pesquisarVendas(venda);
@@ -134,4 +158,6 @@ public class AluguelBO {
 	public int mostrarLivrosSemanal(){
 		return conexaoAluguel.livrosSemana();
 	}
+=======
+>>>>>>> origin/master
 }

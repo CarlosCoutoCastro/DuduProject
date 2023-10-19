@@ -16,7 +16,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaVendaController">
+=======
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaVendaController">
+>>>>>>> origin/master
    <children>
       <VBox minWidth="-Infinity" prefHeight="538.0" prefWidth="140.0">
          <children>
@@ -88,7 +92,11 @@
                         <Insets top="7.0" />
                      </VBox.margin>
                   </Button>
+<<<<<<< HEAD
                   <Button fx:id="funcBotao" alignment="BASELINE_LEFT" minHeight="-Infinity" mnemonicParsing="false" onAction="#mudarTelaFuncionarios" prefHeight="30.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: #f6f6f6;" text="Funcionários">
+=======
+                  <Button alignment="BASELINE_LEFT" minHeight="-Infinity" mnemonicParsing="false" onAction="#mudarTelaFuncionarios" prefHeight="30.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: #f6f6f6;" text="Funcionários">
+>>>>>>> origin/master
                      <font>
                         <Font name="Work Sans SemiBold" size="12.0" />
                      </font>

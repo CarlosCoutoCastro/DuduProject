@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.entity.Cliente;
+<<<<<<< HEAD
 import model.entity.Cliente;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -20,16 +21,32 @@ import DAO.ClienteDAO;
 import model.entity.Cliente;
 import model.bo.ClienteBO;
 import model.bo.ClienteBO;
+=======
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+
+import DAO.ClienteDAO;
+import model.entity.Cliente;
+import model.bo.ClienteBO;
+>>>>>>> origin/master
 
 public class TelaClientesController extends NavController {
 
     @FXML
+<<<<<<< HEAD
     private Button botaoAdicionar;
     @FXML
+=======
+>>>>>>> origin/master
     private TextField srchCliente;
     @FXML
     private VBox clientesLayout;
 
+<<<<<<< HEAD
     static List<Cliente> listaClientes = new ArrayList<>();
 
     public void procurarCliente(ActionEvent event) throws Exception {
@@ -58,10 +75,34 @@ public class TelaClientesController extends NavController {
         Stage stage = new Stage();
         stage.setScene(new Scene(root1));
         stage.show();
+=======
+    public void procurarCliente(ActionEvent event) throws Exception {
+        // String search = srchCliente.getText();
+
+        // ClienteBO controleCliente =  new ClienteBO();
+        // Cliente cliente = new Cliente("000","00000000000",search);
+
+        // System.out.println("Procurando por: " + search);
+
+        
+        //Cliente clienteEncontrado = controleCliente.buscar(cliente);
+
+        //System.out.println(clienteEncontrado.getNome());
+        //RETURN Cliente encontrado
+    }
+
+    public void adicionarCliente(ActionEvent event) throws Exception {
+        // System.out.println("Cliente Adicionado."); // Tem que ter um objeto pra eu colocar
+        // Cliente cliente = new Cliente("nome", "endereco","00000000000"); // Cliente que me foi enviado
+
+        // ClienteBO controleCliente = new ClienteBO();
+        //controleCliente.criar(cliente);
+>>>>>>> origin/master
 
     }
 
     public void initialize() {
+<<<<<<< HEAD
 
         isGerente();
         showUserLogin();
@@ -78,11 +119,22 @@ public class TelaClientesController extends NavController {
 
     public void printClientes(List<Cliente> clientes) {
         try {
+=======
+        try {
+            // ClienteBO controleCliente = new ClienteBO();
+
+            // List<Cliente> clientes = new ArrayList<>(controleCliente.listar());
+            
+            List<Cliente> clientes = new ArrayList<>(clientesTeste());
+
+
+>>>>>>> origin/master
             for (Cliente cliente : clientes) {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/VE/ListaCliente.fxml"));
 
                 HBox hBox = fxmlLoader.load();
                 ListaClientesController ldc = fxmlLoader.getController();
+<<<<<<< HEAD
 
                 ldc.setData(cliente);
                 ldc.userPermissions(!isGerente());
@@ -96,4 +148,35 @@ public class TelaClientesController extends NavController {
 
     }
 
+=======
+                
+                ldc.setData(cliente);
+                ldc.userPermissions(true);
+                clientesLayout.getChildren().add(hBox);
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Handle the exception appropriately, e.g., show an error message.
+        }
+    }
+
+    public List<Cliente> clientesTeste() {
+        List<Cliente> ls = new ArrayList<>();
+
+        Cliente c = new Cliente("Adriano", "Rua Zero", "123.456.789-11");
+        ls.add(c);
+        ls.add(c);
+        ls.add(c);
+        ls.add(c);
+        ls.add(c);
+        ls.add(c);
+        ls.add(c);
+        ls.add(c);
+        ls.add(c);
+        ls.add(c);
+
+        return ls;
+    }
+>>>>>>> origin/master
 }

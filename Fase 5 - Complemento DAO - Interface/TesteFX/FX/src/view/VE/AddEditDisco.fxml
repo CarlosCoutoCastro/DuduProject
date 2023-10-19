@@ -11,7 +11,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <VBox prefWidth="724.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddEditDiscoController">
+=======
+
+<VBox prefWidth="724.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddEditDiscoController">
+>>>>>>> origin/master
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="35.0">
          <children>
@@ -38,7 +43,11 @@
       </HBox>
       <HBox>
          <children>
+<<<<<<< HEAD
             <TextField fx:id="nome" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="27.0" prefWidth="502.0" promptText="Nome" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+=======
+            <TextField fx:id="nome" minHeight="-Infinity" prefHeight="27.0" prefWidth="502.0" promptText="Nome" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+>>>>>>> origin/master
                <font>
                   <Font name="Work Sans Regular" size="14.0" />
                </font>
@@ -49,7 +58,11 @@
                   <Insets right="5.0" />
                </HBox.margin>
             </TextField>
+<<<<<<< HEAD
             <TextField fx:id="banda" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="273.0" promptText="Banda" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+=======
+            <TextField fx:id="banda" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="273.0" promptText="Banda" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+>>>>>>> origin/master
                <font>
                   <Font name="Work Sans Regular" size="14.0" />
                </font>
@@ -64,7 +77,11 @@
       </HBox>
       <HBox>
          <children>
+<<<<<<< HEAD
             <TextField fx:id="estilo" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="27.0" prefWidth="237.0" promptText="Estilo" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+=======
+            <TextField fx:id="estilo" minHeight="-Infinity" prefHeight="27.0" prefWidth="237.0" promptText="Estilo" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+>>>>>>> origin/master
                <font>
                   <Font name="Work Sans Regular" size="14.0" />
                </font>
@@ -75,7 +92,11 @@
                   <Insets right="5.0" />
                </HBox.margin>
             </TextField>
+<<<<<<< HEAD
             <TextField fx:id="quantEstq" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="110.0" promptText="Estoque" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+=======
+            <TextField fx:id="quantEstq" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="110.0" promptText="Estoque" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+>>>>>>> origin/master
                <font>
                   <Font name="Work Sans Regular" size="14.0" />
                </font>
@@ -86,7 +107,11 @@
                   <Insets right="5.0" />
                </HBox.margin>
             </TextField>
+<<<<<<< HEAD
             <TextField fx:id="preco" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="163.0" promptText="Preço" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+=======
+            <TextField fx:id="preco" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="163.0" promptText="Preço" style="-fx-background-color: #F6F6F6; -fx-border-color: #959595; -fx-border-width: .5; -fx-background-radius: 10; -fx-border-radius: 10;">
+>>>>>>> origin/master
                <font>
                   <Font name="Work Sans Regular" size="14.0" />
                </font>
@@ -99,7 +124,10 @@
             <Insets bottom="10.0" />
          </VBox.margin>
       </HBox>
+<<<<<<< HEAD
       <Label fx:id="erroTitulo" text="Titulo do Disco já Existente" textAlignment="CENTER" textFill="#dc4c4c" visible="false" />
+=======
+>>>>>>> origin/master
       <HBox alignment="CENTER_RIGHT">
          <children>
             <Button fx:id="confirm" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#confirmar" prefWidth="150.0" style="-fx-background-color: #5EB357; -fx-background-radius: 10;" text="Confirmar" textFill="WHITE">

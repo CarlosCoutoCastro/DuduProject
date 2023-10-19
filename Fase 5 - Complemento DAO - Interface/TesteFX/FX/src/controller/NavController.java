@@ -3,21 +3,29 @@ package controller;
 import view.Telas;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+<<<<<<< HEAD
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Circle;
 import model.entity.Funcionario;
+=======
+import javafx.scene.control.Label;
+import javafx.scene.shape.Circle;
+>>>>>>> origin/master
 
 public class NavController {
 
     @FXML private Label nomeUsuario;
     @FXML private Label funcUsuario;
     @FXML private Circle funcColor;
+<<<<<<< HEAD
 
     @FXML
     private Button funcBotao;
 
     public static Funcionario funcionarioLogado;
+=======
+>>>>>>> origin/master
     
     public void mudarTelaVenda(ActionEvent event) throws Exception {
         Telas.telaVenda();
@@ -41,6 +49,7 @@ public class NavController {
         Telas.telaLogin();
     }
 
+<<<<<<< HEAD
     public Boolean isGerente(){
         System.out.println(funcionarioLogado.getFuncao());
 
@@ -65,11 +74,22 @@ public class NavController {
         nomeUsuario.setText(funcionarioLogado.getLogin());
         funcUsuario.setText(funcionarioLogado.getFuncao());
         if (funcionarioLogado.getFuncao().equals("Funcionario")) {
+=======
+    /* Usado quando conectar com o DAO (Muda a cor da Funcao do Usuario logado no app)
+    public void userLogin(Funcionario func) {
+        nomeUsuario.setText(func.getNome());
+        funcUsuario.setText(func.getFuncao());
+        if (func.getFuncao() == "Funcionario") {
+>>>>>>> origin/master
             funcColor.setStyle("-fx-stroke: #6ee364");
             funcColor.setStyle("-fx-fill: #5eb357");
             funcUsuario.setStyle("-fx-text-fill: #5eb357");
         } else 
+<<<<<<< HEAD
         if (funcionarioLogado.getFuncao().equals("Gerente")) {
+=======
+        if (func.getFuncao() == "Administrador") {
+>>>>>>> origin/master
             funcColor.setStyle("-fx-stroke: #a45cff");
             funcColor.setStyle("-fx-fill: #883de9");
             funcUsuario.setStyle("-fx-text-fill: #883de9");
@@ -79,5 +99,9 @@ public class NavController {
             funcUsuario.setStyle("-fx-text-fill: grey");
         }
     }
+<<<<<<< HEAD
     
+=======
+    */
+>>>>>>> origin/master
 }

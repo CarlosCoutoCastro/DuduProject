@@ -182,6 +182,7 @@ public class ClienteDAO extends BaseDaoImpl<Cliente> {
 		return null;
 	}
 
+<<<<<<< HEAD
 	
 
 	public List<Cliente> pesquisaTotal(Cliente cliente) {
@@ -217,4 +218,6 @@ public class ClienteDAO extends BaseDaoImpl<Cliente> {
 		return Clientes;
 	}
 
+=======
+>>>>>>> origin/master
 }

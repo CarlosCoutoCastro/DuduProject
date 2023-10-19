@@ -9,7 +9,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="794.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaFuncionarioController">
+=======
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="794.0" style="-fx-background-color: #FBFDFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListaFuncionarioController">
+>>>>>>> origin/master
    <children>
       <Label fx:id="id" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="24.0" text="Id" textAlignment="CENTER">
          <font>
@@ -19,7 +23,11 @@
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
+<<<<<<< HEAD
       <Label fx:id="nome" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="34.0" prefWidth="322.0" text="Nome" textAlignment="CENTER">
+=======
+      <Label fx:id="nome" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="34.0" prefWidth="967.0" text="Nome" textAlignment="CENTER">
+>>>>>>> origin/master
          <font>
             <Font size="11.0" />
          </font>
@@ -27,7 +35,11 @@
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
+<<<<<<< HEAD
       <Label fx:id="funcao" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="162.0" text="Função" textAlignment="CENTER">
+=======
+      <Label fx:id="funcao" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="116.0" text="Função" textAlignment="CENTER">
+>>>>>>> origin/master
          <font>
             <Font size="11.0" />
          </font>
@@ -35,7 +47,27 @@
             <Insets left="7.0" />
          </HBox.margin>
       </Label>
+<<<<<<< HEAD
       <Label fx:id="cpf" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="192.0" text="Senha" textAlignment="CENTER">
+=======
+      <Label fx:id="cpf" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="84.0" text="CPF" textAlignment="CENTER">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="7.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="endereco" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="148.0" text="Endereço" textAlignment="CENTER">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="7.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="salario" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="68.0" text="Salário" textAlignment="CENTER">
+>>>>>>> origin/master
          <font>
             <Font size="11.0" />
          </font>

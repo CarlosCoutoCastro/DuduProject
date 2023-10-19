@@ -1,5 +1,6 @@
 package controller;
 
+<<<<<<< HEAD
 import model.bo.FuncionarioBO;
 import model.entity.Funcionario;
 
@@ -10,18 +11,28 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+=======
+import model.entity.Funcionario;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+>>>>>>> origin/master
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AddEditFuncionarioController {
 
     @FXML
+<<<<<<< HEAD
     private Label erroFuncionario;
     @FXML
+=======
+>>>>>>> origin/master
     private TextField nome;
     @FXML
     private TextField funcao;
     @FXML
+<<<<<<< HEAD
     private TextField senha;
     @FXML
     private Button confirm;
@@ -75,10 +86,26 @@ public class AddEditFuncionarioController {
                 erroFuncionario.setVisible(true);
             }
         }
+=======
+    private TextField cpf;
+    @FXML
+    private TextField endereco;
+    @FXML
+    private TextField salario;
+    @FXML
+    private Button confirm;
+
+    @FXML
+    void confirmar(ActionEvent event) {
+        System.out.println("pop-up aberto");
+        Stage stage = (Stage) confirm.getScene().getWindow();
+        stage.close();
+>>>>>>> origin/master
     }
 
     public void setData(Funcionario func) {
 
+<<<<<<< HEAD
         setSelectedFuncionario(func);
         nome.setText(func.getLogin()); // login nome, senha cpf
         funcao.setText(func.getFuncao());
@@ -91,5 +118,12 @@ public class AddEditFuncionarioController {
 
     public void setSelectedFuncionario(Funcionario selectedFuncionario) {
         this.selectedFuncionario = selectedFuncionario;
+=======
+        nome.setText(func.getLogin()); // login nome, senha cpf
+        funcao.setText(func.getFuncao());
+        cpf.setText(func.getSenha());
+        endereco.setText(".....");
+        salario.setText(".....");
+>>>>>>> origin/master
     }
 }

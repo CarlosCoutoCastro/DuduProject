@@ -7,7 +7,10 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<<<<<<< HEAD
 <?import javafx.scene.control.TextField?>
+=======
+>>>>>>> origin/master
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -18,7 +21,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaRelatorioController">
+=======
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #f6f6f6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaRelatorioController">
+>>>>>>> origin/master
    <children>
       <VBox minWidth="-Infinity" prefHeight="538.0" prefWidth="140.0">
          <children>
@@ -90,7 +97,11 @@
                         <Insets top="7.0" />
                      </VBox.margin>
                   </Button>
+<<<<<<< HEAD
                   <Button fx:id="funcBotao" alignment="BASELINE_LEFT" minHeight="-Infinity" mnemonicParsing="false" onAction="#mudarTelaFuncionarios" prefHeight="30.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: #f6f6f6;" text="Funcionários">
+=======
+                  <Button alignment="BASELINE_LEFT" minHeight="-Infinity" mnemonicParsing="false" onAction="#mudarTelaFuncionarios" prefHeight="30.0" prefWidth="140.0" style="-fx-background-radius: 10; -fx-background-color: #f6f6f6;" text="Funcionários">
+>>>>>>> origin/master
                      <font>
                         <Font name="Work Sans SemiBold" size="12.0" />
                      </font>
@@ -308,6 +319,7 @@
                                  </font>
                               </Label>
                               <Pane prefHeight="25.0" prefWidth="399.0" />
+<<<<<<< HEAD
                               <TextField fx:id="srchCliente" minWidth="-Infinity" onAction="#procurarCliente" prefHeight="27.0" prefWidth="191.0" promptText="Cliente" style="-fx-background-radius: 10; -fx-background-color: #FBFDFF; -fx-border-color: #959595; -fx-border-radius: 10;">
                                  <cursor>
                                     <Cursor fx:constant="TEXT" />
@@ -316,6 +328,8 @@
                                     <Insets right="5.0" />
                                  </HBox.margin>
                               </TextField>
+=======
+>>>>>>> origin/master
                               <DatePicker fx:id="pickDate" minWidth="-Infinity" onAction="#pesquisarData" prefHeight="4.0" prefWidth="174.0" promptText="01/01/2000" style="-fx-border-color: #959595; -fx-border-radius: 4;" />
                            </children>
                            <VBox.margin>
@@ -326,7 +340,11 @@
                            <children>
                               <HBox alignment="CENTER_LEFT" minHeight="-Infinity" prefHeight="32.0" prefWidth="423.0" style="-fx-background-color: #FBFDFF; -fx-border-color: #efefef;">
                                  <children>
+<<<<<<< HEAD
                                     <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="80.0" text="Cliente" textAlignment="CENTER" textFill="#616a6e">
+=======
+                                    <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="80.0" text="Codigo Aluguel" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                        <font>
                                           <Font size="10.0" />
                                        </font>
@@ -334,7 +352,11 @@
                                           <Insets left="7.0" />
                                        </HBox.margin>
                                     </Label>
+<<<<<<< HEAD
                                     <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="130.0" text="Titulo" textAlignment="CENTER" textFill="#616a6e">
+=======
+                                    <Label maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="130.0" text="CPF Cliente" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                        <font>
                                           <Font size="10.0" />
                                        </font>
@@ -342,7 +364,11 @@
                                           <Insets left="7.0" />
                                        </HBox.margin>
                                     </Label>
+<<<<<<< HEAD
                                     <Label maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="66.0" text="Valor" textAlignment="CENTER" textFill="#616a6e">
+=======
+                                    <Label maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="80.0" text="Codigo Objeto" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                        <font>
                                           <Font size="10.0" />
                                        </font>
@@ -350,7 +376,11 @@
                                           <Insets left="7.0" />
                                        </HBox.margin>
                                     </Label>
+<<<<<<< HEAD
                                     <Label layoutX="350.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="114.0" text="Data de Aquisição" textAlignment="CENTER" textFill="#616a6e">
+=======
+                                    <Label layoutX="350.0" layoutY="11.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="115.0" text="Data de Aquisição" textAlignment="CENTER" textFill="#616a6e">
+>>>>>>> origin/master
                                        <font>
                                           <Font size="10.0" />
                                        </font>

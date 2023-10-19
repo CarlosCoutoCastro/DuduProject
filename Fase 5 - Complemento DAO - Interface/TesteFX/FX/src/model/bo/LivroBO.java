@@ -1,14 +1,22 @@
 package model.bo;
 
+<<<<<<< HEAD
 import java.sql.Date;
 import java.sql.SQLDataException;
 import java.text.SimpleDateFormat;
+=======
+>>>>>>> origin/master
 import java.util.List;
 
 import DAO.BaseDao;
 import DAO.LivroDAO;
 import model.entity.Livro;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 public class LivroBO {
 	LivroDAO conexaoLivro = new LivroDAO();
 
@@ -20,6 +28,7 @@ public class LivroBO {
 		}
 	}
 
+<<<<<<< HEAD
 	public void criar(Livro liv) {
 
 		Livro livro = conexaoLivro.pesquisaTitulo(liv);
@@ -34,6 +43,19 @@ public class LivroBO {
 		conexaoLivro.alterar(liv);
 	}
 
+=======
+	public long criar(Livro liv) {
+
+		Livro Livro = conexaoLivro.pesquisaTitulo(liv);
+		if (Livro == null) {
+			return conexaoLivro.inserir(liv);
+		} else {
+			System.out.println("POP-UP LIVRO JA EXISTENTE");
+			return (Long) null;
+		}
+	}
+
+>>>>>>> origin/master
 	public void Deletar(Livro liv) {
 
 		Livro LivroPorID = conexaoLivro.buscar(liv);
@@ -49,7 +71,11 @@ public class LivroBO {
 		}
 	}
 
+<<<<<<< HEAD
 	public Livro buscar(Livro liv) {
+=======
+	public Livro buscar(Livro liv){
+>>>>>>> origin/master
 
 		Livro LivroPorID = conexaoLivro.buscar(liv);
 		if (LivroPorID != null) {
@@ -65,6 +91,7 @@ public class LivroBO {
 		}
 	}
 
+<<<<<<< HEAD
 	public Livro pesquisaTitulo(Livro liv) {
 		Livro livro = conexaoLivro.pesquisaTitulo(liv);
 		if (livro != null) {
@@ -108,4 +135,9 @@ public class LivroBO {
 
 	}
 
+=======
+	public List<Livro> listar(){
+		return conexaoLivro.listar();
+	}
+>>>>>>> origin/master
 }

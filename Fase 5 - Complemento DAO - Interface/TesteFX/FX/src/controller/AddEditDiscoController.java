@@ -1,5 +1,6 @@
 package controller;
 
+<<<<<<< HEAD
 import model.bo.DiscoBO;
 import model.entity.Disco;
 
@@ -10,15 +11,24 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+=======
+import model.entity.Disco;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+>>>>>>> origin/master
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AddEditDiscoController {
 
     @FXML
+<<<<<<< HEAD
     private Label erroTitulo;
 
     @FXML
+=======
+>>>>>>> origin/master
     private TextField nome;
     @FXML
     private TextField banda;
@@ -31,6 +41,7 @@ public class AddEditDiscoController {
     @FXML
     private Button confirm;
 
+<<<<<<< HEAD
     private Disco selectedDisco;
 
     @FXML
@@ -87,10 +98,18 @@ public class AddEditDiscoController {
             }
         }
 
+=======
+    @FXML
+    void confirmar(ActionEvent event) {
+        System.out.println("pop-up aberto");
+        Stage stage = (Stage) confirm.getScene().getWindow();
+        stage.close();
+>>>>>>> origin/master
     }
 
     public void setData(Disco disco) {
 
+<<<<<<< HEAD
         setSelectedDisco(disco);
         System.out.println(disco.getId());
         nome.setText(disco.getTitulo());
@@ -106,6 +125,13 @@ public class AddEditDiscoController {
 
     public void setSelectedDisco(Disco selectedDisco) {
         this.selectedDisco = selectedDisco;
+=======
+        nome.setText(disco.getTitulo());
+        banda.setText(disco.getNomeBanda());
+        estilo.setText(disco.getEstilo());
+        quantEstq.setText(""+disco.getQuantidadeExemplares());
+        preco.setText(""+disco.getValorAluguel());
+>>>>>>> origin/master
     }
 
 }
